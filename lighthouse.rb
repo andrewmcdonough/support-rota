@@ -1,7 +1,7 @@
 require 'sinatra'
 
-DEVELOPERS = %w(Andrew Simon Joe)
-START_DATE = Time.mktime(2011,02,04)
+DEVELOPERS = %w(Andrew Alex Dan Tijmen Erik)
+START_DATE = Time.mktime(2021,05,10)
 
 get '/' do
   @who = who_is_on_lighthouse(Time.now)
@@ -24,4 +24,3 @@ end
 def days_since_start(date)
   ((date - START_DATE) / (60*60*24)).floor
 end
-
